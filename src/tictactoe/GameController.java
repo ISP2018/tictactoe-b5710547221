@@ -48,7 +48,9 @@ public class GameController {
 		
 		updateGameStatus();
 	}
-	
+	/**
+	 * update status of game of player
+	 */
 	private void updateGameStatus() {
 		Player winner = game.winner();
 		if (winner != Player.NONE) topLabel.setText("Player "+winner+" wins!");
